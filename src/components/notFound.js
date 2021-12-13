@@ -11,12 +11,22 @@ import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import Paper from "@mui/material/Paper";
+import { teal } from '@mui/material/colors';
+import { createTheme, ThemeProvider } from '@mui/material/styles';
+
+const theme = createTheme({
+  palette: {
+    primary: {
+      main: teal[900],
+    },
+  },
+});
 
 
 const NotFound = () => {
 
     return (
-        <div>
+        <ThemeProvider theme={theme}>
             <Paper sx={{
                 backgroundColor: "#c8e6c9",
                 minHeight: '93vh',
@@ -46,7 +56,7 @@ const NotFound = () => {
                     </Box>
                 </Box>
             </Paper>
-        </div>
+        </ThemeProvider>
     );
 }
 

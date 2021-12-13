@@ -1,9 +1,10 @@
-import Test from './components/test'
 import Navbar from './components/navbar'
 import React from 'react';
 import { Route, Routes } from "react-router-dom";
 import NotFound from './components/notFound';
 import Home from './components/home';
+import Vegetation from './components/vegetation';
+import Timelapse from './components/timelapse';
 
 function App() {
     return (
@@ -11,7 +12,8 @@ function App() {
             <Navbar />
             <Routes>
                 <Route path="/" element={<Home />} exact />
-                <Route path="/test" element={<Test />} exact />
+                <Route path="/vegetation" element={<Vegetation />} exact />
+                <Route path="/timelapse" element={<Timelapse />} exact />
 
                 {/* <Route path="/path" element={component} exact /> */}
 
