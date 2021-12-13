@@ -1,6 +1,4 @@
 import * as React from 'react';
-import { useHistory } from 'react-router';
-import axios from 'axios';
 
 //MUI
 import AppBar from '@mui/material/AppBar';

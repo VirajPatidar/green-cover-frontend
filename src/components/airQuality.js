@@ -3,7 +3,7 @@ import axios from 'axios';
 import MapFrame from './mapFrame';
 
 //MUI
-import { Typography, Box, Link, IconButton, Card } from '@mui/material';
+import { Typography, Box, Link, IconButton } from '@mui/material';
 import InfoOutlinedIcon from '@mui/icons-material/InfoOutlined';
 import InfoDialog from './infoDialog';
 import Accordion from '@mui/material/Accordion';
