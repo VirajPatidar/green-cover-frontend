@@ -5,6 +5,7 @@ import NotFound from './components/notFound';
 import Home from './components/home';
 import Vegetation from './components/vegetation';
 import Timelapse from './components/timelapse';
+import LandCover from './components/landCover';
 
 function App() {
     return (
@@ -14,6 +15,7 @@ function App() {
                 <Route path="/" element={<Home />} exact />
                 <Route path="/vegetation" element={<Vegetation />} exact />
                 <Route path="/timelapse" element={<Timelapse />} exact />
+                <Route path="/landcover" element={<LandCover />} exact />
 
                 {/* <Route path="/path" element={component} exact /> */}
 

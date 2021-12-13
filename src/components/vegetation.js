@@ -33,7 +33,7 @@ const Vegetation = () => {
         <>
             {data
                 ?
-                <Box>
+                <Box sx={{mb:5}}>
                     <Box sx={{ ml: 7, my: 4 }}>
                         <Typography variant="h5">
                             {data.name}
