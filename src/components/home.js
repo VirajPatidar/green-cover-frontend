@@ -6,6 +6,7 @@ import bannerlogo from '../images/bannerlogo.svg';
 //MUI
 import { Box, Button, Container, Link, Typography } from "@mui/material";
 import GitHubIcon from '@mui/icons-material/GitHub';
+import HomeTable from './table';
 
 
 const Home = () => {
@@ -18,9 +19,9 @@ const Home = () => {
                             Green Cover Analysis
                         </Box>
                     </Box>
-                    <img src={bannerlogo} alt="banner" style={{ height: 300, width: 400 }}/>
+                    <img src={bannerlogo} alt="banner" style={{ height: 300, width: 400 }} />
                     <Box mt={2}>
-                        <Typography variant='body1' sx={{mx: 4}}>
+                        <Typography variant='body1' sx={{ mx: 4 }}>
                             <strong>Green Cover Analysis</strong> is a project build to estimate and analyze change in green cover using geo mapped photographs and satellite imagery. <br />
                             Our interactive maps along with charts and related data enables students, researchers, environmentalists, etc; to get a fairly accurate estimate of green cover and its relation with other environmental factors.
                         </Typography>
@@ -41,6 +42,9 @@ const Home = () => {
                         </Link>
                     </Box>
                 </Box>
+            </Box>
+            <Box sx={{ my: 6 }}>
+                <HomeTable />
             </Box>
         </Container>
     );
