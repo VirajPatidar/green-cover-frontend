@@ -1,15 +1,11 @@
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router';
 import axios from 'axios';
-import Copyright from './copyright'
-
 
 //MUI
 import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
 import CssBaseline from '@mui/material/CssBaseline';
 import TextField from '@mui/material/TextField';
-import Link from '@mui/material/Link';
 import Box from '@mui/material/Box';
 import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
 import Typography from '@mui/material/Typography';
@@ -35,7 +31,6 @@ function TransitionLeft(props) {
 
 export default function Admin() {
 
-    const navigate = useNavigate();
     const initialFormData = Object.freeze({
         username: '',
         password: '',
