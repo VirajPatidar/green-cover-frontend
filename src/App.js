@@ -7,6 +7,7 @@ import Vegetation from './components/vegetation';
 import Timelapse from './components/timelapse';
 import LandCover from './components/landCover';
 import AirQuality from './components/airQuality';
+import Volunteer from './components/volunteer';
 
 function App() {
     return (
@@ -19,6 +20,8 @@ function App() {
                 <Route path="/timelapse" element={<Timelapse />} exact />
                 <Route path="/landcover" element={<LandCover />} exact />
                 <Route path="/airquality" element={<AirQuality />} exact />
+
+                <Route path="/volunteer" element={<Volunteer />} exact />
 
                 <Route path="*" element={<NotFound />} />
             </Routes>
