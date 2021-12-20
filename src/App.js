@@ -8,6 +8,7 @@ import Timelapse from './components/timelapse';
 import LandCover from './components/landCover';
 import AirQuality from './components/airQuality';
 import Volunteer from './components/volunteer';
+import Admin from './components/admin';
 
 function App() {
     return (
@@ -22,6 +23,7 @@ function App() {
                 <Route path="/airquality" element={<AirQuality />} exact />
 
                 <Route path="/volunteer" element={<Volunteer />} exact />
+                <Route path="/admin" element={<Admin />} exact />
 
                 <Route path="*" element={<NotFound />} />
             </Routes>
