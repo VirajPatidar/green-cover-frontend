@@ -11,6 +11,8 @@ import ParkOutlinedIcon from '@mui/icons-material/ParkOutlined';
 import TimelapseOutlinedIcon from '@mui/icons-material/TimelapseOutlined';
 import LandscapeOutlinedIcon from '@mui/icons-material/LandscapeOutlined';
 import AirOutlinedIcon from '@mui/icons-material/AirOutlined';
+import AdminPanelSettingsIcon from '@mui/icons-material/AdminPanelSettings';
+import VolunteerActivismIcon from '@mui/icons-material/VolunteerActivism';
 import { Button, Link } from '@mui/material';
 
 export default function Navbar() {
@@ -32,10 +34,12 @@ export default function Navbar() {
                             Green Cover Analysis
                         </Typography>
                     </Link>
-                    <Button color="inherit" sx={{ ml: 18 }} startIcon={<ParkOutlinedIcon sx={{ mr: 0, pr: 0 }} />} href="/vegetation">Vegetation (Global)</Button>
-                    <Button color="inherit" sx={{ ml: 5 }} startIcon={<TimelapseOutlinedIcon sx={{ mr: 0, pr: 0 }} />} href="/timelapse">NDVI Timelapse (Global)</Button>
-                    <Button color="inherit" sx={{ ml: 5 }} startIcon={<LandscapeOutlinedIcon sx={{ mr: 0, pr: 0 }} />} href="/landcover">Land Cover (Maharashtra)</Button>
-                    <Button color="inherit" sx={{ ml: 5 }} startIcon={<AirOutlinedIcon sx={{ mr: 0, pr: 0 }} />} href="/airQuality">Air Quality (Maharashtra)</Button>
+                    <Button color="inherit" sx={{ ml: 18 }} startIcon={<ParkOutlinedIcon sx={{ mr: 0, pr: 0 }} />} href="/vegetation">Vegetation</Button>
+                    <Button color="inherit" sx={{ ml: 5 }} startIcon={<TimelapseOutlinedIcon sx={{ mr: 0, pr: 0 }} />} href="/timelapse">NDVI Timelapse</Button>
+                    <Button color="inherit" sx={{ ml: 5 }} startIcon={<LandscapeOutlinedIcon sx={{ mr: 0, pr: 0 }} />} href="/landcover">Land Cover</Button>
+                    <Button color="inherit" sx={{ ml: 5 }} startIcon={<AirOutlinedIcon sx={{ mr: 0, pr: 0 }} />} href="/airQuality">Air Quality</Button>
+                    <Button color="inherit" sx={{ ml: 5 }} startIcon={<VolunteerActivismIcon sx={{ mr: 0, pr: 0 }} />} href="/volunteer">Volunteer</Button>
+                    <Button color="inherit" sx={{ ml: 5 }} startIcon={<AdminPanelSettingsIcon sx={{ mr: 0, pr: 0 }} />} href="/admin">Admin</Button>
                 </Toolbar>
             </AppBar>
         </Box>

@@ -111,7 +111,7 @@ const Volunteer = () => {
                         Register as a Volunteer (Maharashtra)
                     </Typography>
                     <Typography variant="body1" component="div" sx={{mb:0}}>
-                        Register as a volunteer and contribute in our green drives to redure green cover and spread awareness. <br />
+                        Register as a volunteer and contribute in our green drives to reduce green cover depletion and spread awareness. <br />
                         At present we are only accepting applications for the state of Maharashtra, but we plan to expand soon.
                     </Typography>
                     <form noValidate autoComplete="off" onSubmit={handleSubmit}>
