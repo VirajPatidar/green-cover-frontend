@@ -42,7 +42,7 @@ const Volunteer = () => {
     const [emailError, setEmailError] = useState(false)
     const [ageError, setAgeError] = useState(false)
     const [phoneError, setPhoneError] = useState(false)
-    const [cityError, setCityError] = useState(false)
+    // const [cityError, setCityError] = useState(false)
     const [pincodeError, setPincodeError] = useState(false)
     
     const handleSubmit = (e) => {
@@ -55,7 +55,7 @@ const Volunteer = () => {
         setEmailError(false)
         setAgeError(false)
         setPhoneError(false)
-        setCityError(false)
+        // setCityError(false)
         setPincodeError(false)
 
         if (name === "") {
@@ -75,7 +75,7 @@ const Volunteer = () => {
 			submit = false
 		}
 		if (city === "") {
-            setCityError(true)
+            // setCityError(true)
 			submit = false
 		}
         if (pincode <= 0 || pincode.toString().length < 6) {
