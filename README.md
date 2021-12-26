@@ -10,7 +10,6 @@ _A [backend api](https://github.com/VirajPatidar/green-cover-backend) has been b
 
 **Link to backend repo:** [https://github.com/VirajPatidar/green-cover-backend](https://github.com/VirajPatidar/green-cover-backend)
 
-<br/>
 
 ### Tech Stack ###
 * React
