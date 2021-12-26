@@ -1,70 +1,44 @@
-# Getting Started with Create React App
+# Green Cover
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+_green-cover is a project that helps in analysing geo-mapped aerial data to estimate green cover and related factors._ <br/>
 
-## Available Scripts
+_A [backend api](https://github.com/VirajPatidar/green-cover-backend) has been built using **Django REST Framework** to achieve the same._
 
-In the project directory, you can run:
+<br/>
 
-### `npm start`
+**Link to the website:** [https://green-cover.netlify.app/](https://green-cover.netlify.app/) <br/>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+**Link to backend repo:** [https://github.com/VirajPatidar/green-cover-backend](https://github.com/VirajPatidar/green-cover-backend)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+<br/>
 
-### `npm test`
+### Tech Stack ###
+* React
+* MATERIAL-UI
+* axios
+* date-fns
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+### Features ###
+* Analysis of geo mapped photographs and satellite imagery to estimate green cover over time across the globe.
+* Rendering dynamic maps to analyse green cover and generate timelapses representing change in green cover.
+* To understand how increasing rate of deforestation is directly related to bad air quality and provide concrete statistics for the same. 
+* Time series chart/graph representing change in green cover over the years for the state of Maharashtra.
+* Predicting type of landcover in the state of Maharashtra by performing supervised classification using existing datasets. 
+* Analysis of air quality on basis of various parameters for the state of Maharashtra.
+* A system to manage and sign-up volunteers to arrange green drives and awareness programs.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Features along with datasets used: ###
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+| TASK / FEATURE | DATASET |
+| :---         | :---         
+| Estimating Green Cover using Vegetation Indexes (Global)   | [USGS Landsat 8 Level 2, Collection 2, Tier 1](https://developers.google.com/earth-engine/datasets/catalog/LANDSAT_LC08_C02_T1_L2)    |
+| Timelapse for Normalized Difference Vegetation Index (NDVI) (Global)     | [USGS Landsat 8 Level 2, Collection 2, Tier 1](https://developers.google.com/earth-engine/datasets/catalog/LANDSAT_LC08_C02_T1_L2) <br /> [USGS Landsat 5 Level 2, Collection 2, Tier 1](https://developers.google.com/earth-engine/datasets/catalog/LANDSAT_LT05_C02_T1_L2) |
+| Time series graphical analysis representing Vegetation Indexes (NDVI & EVI) of Maharashtra     | [MOD13Q1.006 MODIS Terra Vegetation Indices 16-Day Global 250m](https://developers.google.com/earth-engine/datasets/catalog/MODIS_006_MOD13Q1)     |
+| Landcover Analysis of Maharashtra     | [USGS Landsat 8 Level 2, Collection 2, Tier 1](https://developers.google.com/earth-engine/datasets/catalog/LANDSAT_LC08_C02_T1_L2) <br /> [MCD12Q1.006 MODIS Land Cover Type Yearly Global 500m](https://developers.google.com/earth-engine/datasets/catalog/MODIS_006_MCD12Q1)   |
+| Analysing Air Quality of Maharashtra     | [Sentinel-5P NRTI AER AI: Near Real-Time UV Aerosol Index](https://developers.google.com/earth-engine/datasets/catalog/COPERNICUS_S5P_NRTI_L3_AER_AI) <br /> [Sentinel-5P NRTI CO: Near Real-Time Carbon Monoxide](https://developers.google.com/earth-engine/datasets/catalog/COPERNICUS_S5P_NRTI_L3_CO) <br /> [Sentinel-5P NRTI NO2: Near Real-Time Nitrogen Dioxide](https://developers.google.com/earth-engine/datasets/catalog/COPERNICUS_S5P_NRTI_L3_NO2) <br /> [Sentinel-5P NRTI HCHO: Near Real-Time Formaldehyde](https://developers.google.com/earth-engine/datasets/catalog/COPERNICUS_S5P_NRTI_L3_HCHO)   |
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<br/>
+<br/>
