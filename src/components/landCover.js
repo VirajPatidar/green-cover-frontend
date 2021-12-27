@@ -17,7 +17,7 @@ const LandCover = () => {
     const close = () => setOpen(false);
 
     useEffect(() => {
-        axios.get(`http://localhost:8000/landcover`)
+        axios.get(`https://green-cover-backend.herokuapp.com/landcover`)
             .then((res) => {
                 console.log(res);
                 console.log(res.data.response_data);

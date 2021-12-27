@@ -39,7 +39,7 @@ export default function Graph() {
 
         if (submit) {
             setGraphs(null);
-            axios.post(`http://localhost:8000/vegetation`, {
+            axios.post(`https://green-cover-backend.herokuapp.com/vegetation`, {
                 "start_date": format(value, "yyyy-MM-dd"),
                 "end_date": format(value1, "yyyy-MM-dd"),
             })
