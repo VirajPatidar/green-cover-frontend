@@ -7,6 +7,7 @@ import TableContainer from '@mui/material/TableContainer';
 import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
+import { Box, Typography } from '@mui/material';
 
 const StyledTableCell = styled(TableCell)(({ theme }) => ({
     [`&.${tableCellClasses.head}`]: {
@@ -28,33 +29,38 @@ const StyledTableRow = styled(TableRow)(({ theme }) => ({
     },
 }));
 
-export default function VolunteerTable({rows}) {
+export default function VolunteerTable({ rows }) {
     return (
-        <TableContainer component={Paper}>
-            <Table sx={{ minWidth: 1000 }} aria-label="customized table">
-                <TableHead>
-                    <TableRow>
-                        <StyledTableCell align="left">Name</StyledTableCell>
-                        <StyledTableCell align="left">Email</StyledTableCell>
-                        <StyledTableCell align="left">Age</StyledTableCell>
-                        <StyledTableCell align="left">Phone</StyledTableCell>
-                        <StyledTableCell align="left">City</StyledTableCell>
-                        <StyledTableCell align="left">Pincode</StyledTableCell>
-                    </TableRow>
-                </TableHead>
-                <TableBody>
-                    {rows.map((row) => (
-                        <StyledTableRow key={row.name}>
-                            <StyledTableCell align="left">{row.name}</StyledTableCell>
-                            <StyledTableCell align="left">{row.email}</StyledTableCell>
-                            <StyledTableCell align="left">{row.age}</StyledTableCell>
-                            <StyledTableCell align="left">{row.phone}</StyledTableCell>
-                            <StyledTableCell align="left">{row.city}</StyledTableCell>
-                            <StyledTableCell align="left">{row.pincode}</StyledTableCell>
-                        </StyledTableRow>
-                    ))}
-                </TableBody>
-            </Table>
-        </TableContainer>
+        <Box sx={{mt: 5, mb:5}}>
+            <Typography variant="h5" gutterBottom component="div" sx={{pb: 1}}>
+                Volunteers
+            </Typography>
+            <TableContainer component={Paper}>
+                <Table sx={{ minWidth: 1000 }} aria-label="customized table">
+                    <TableHead>
+                        <TableRow>
+                            <StyledTableCell align="left">Name</StyledTableCell>
+                            <StyledTableCell align="left">Email</StyledTableCell>
+                            <StyledTableCell align="left">Age</StyledTableCell>
+                            <StyledTableCell align="left">Phone</StyledTableCell>
+                            <StyledTableCell align="left">City</StyledTableCell>
+                            <StyledTableCell align="left">Pincode</StyledTableCell>
+                        </TableRow>
+                    </TableHead>
+                    <TableBody>
+                        {rows.map((row) => (
+                            <StyledTableRow key={row.name}>
+                                <StyledTableCell align="left">{row.name}</StyledTableCell>
+                                <StyledTableCell align="left">{row.email}</StyledTableCell>
+                                <StyledTableCell align="left">{row.age}</StyledTableCell>
+                                <StyledTableCell align="left">{row.phone}</StyledTableCell>
+                                <StyledTableCell align="left">{row.city}</StyledTableCell>
+                                <StyledTableCell align="left">{row.pincode}</StyledTableCell>
+                            </StyledTableRow>
+                        ))}
+                    </TableBody>
+                </Table>
+            </TableContainer>
+        </Box>
     );
 }
