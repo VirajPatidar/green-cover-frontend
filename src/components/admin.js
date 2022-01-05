@@ -15,6 +15,7 @@ import Slide from '@mui/material/Slide';
 import { teal } from '@mui/material/colors';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import VolunteerTable from './volunteerTable';
+import EventForm from './eventForm';
 
 const theme = createTheme({
     palette: {
@@ -158,10 +159,15 @@ export default function Admin() {
                             GO
                         </Button>
                     </Box>
-                    <Box sx={{m:3}}>
+                    <Box sx={{ m: 3 }}>
                         {
                             login ?
-                                <VolunteerTable rows={data} />
+                                <>
+                                    <Box sx={{mt: 5, mb: 5, pb: 5}}>
+                                        <EventForm />
+                                    </Box>
+                                    <VolunteerTable rows={data} />
+                                </>
                                 :
                                 null
                         }
