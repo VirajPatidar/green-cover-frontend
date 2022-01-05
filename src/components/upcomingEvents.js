@@ -20,7 +20,7 @@ const UpcomingEvents = () => {
     const [data, setData] = useState([]);
 
     useEffect(() => {
-        axios.get(`http://localhost:8000/get-event`)
+        axios.get(`https://green-cover-backend.herokuapp.com/get-event`)
             .then((res) => {
                 console.log(res);
                 console.log(res.data);

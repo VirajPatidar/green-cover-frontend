@@ -68,7 +68,7 @@ const EventForm = () => {
             submit = false
         }
         if (submit) {
-            axios.post(`http://localhost:8000/create-event`, {
+            axios.post(`https://green-cover-backend.herokuapp.com/create-event`, {
                 "name": name,
                 "city": city,
                 "address": add,

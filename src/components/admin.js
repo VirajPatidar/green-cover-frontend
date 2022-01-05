@@ -82,7 +82,7 @@ export default function Admin() {
 
 
         if (submit) {
-            axios.post(`http://localhost:8000/get-volunteers`, {
+            axios.post(`https://green-cover-backend.herokuapp.com/get-volunteers`, {
                 "username": formData.username,
                 "password": formData.password,
             })
