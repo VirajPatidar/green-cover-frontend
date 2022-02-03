@@ -10,6 +10,7 @@ import TextField from '@mui/material/TextField';
 import Autocomplete from '@mui/material/Autocomplete';
 import { teal } from '@mui/material/colors';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
+import { Box, FormControl, InputLabel, MenuItem, Select } from '@mui/material';
 
 const theme = createTheme({
     palette: {
@@ -31,7 +32,7 @@ const VolunteerForm = () => {
     let navigate = useNavigate();
     const [name, setName] = useState('')
     const [email, setEmail] = useState('')
-    const [age, setAge] = useState(0)
+    const [age, setAge] = useState('')
     const [phone, setPhone] = useState(0)
     const [city, setCity] = useState('Mumbai')
     const [pincode, setPincode] = useState(0)
@@ -129,16 +130,27 @@ const VolunteerForm = () => {
                     required
                     error={emailError}
                 />
-                <TextField sx={field}
-                    onChange={(e) => setAge(e.target.value)}
-                    label="Age"
-                    variant="outlined"
-                    type="number"
-                    color="primary"
-                    fullWidth
-                    required
-                    error={ageError}
-                />
+
+                <Box sx={{ minWidth: 120 }}>
+                    <FormControl fullWidth>
+                        <InputLabel id="age-select-label">Age</InputLabel>
+                        <Select
+                            labelId="age-select-label"
+                            id="age-select"
+                            value={age}
+                            label="Age"
+                            required
+                            onChange={(e) => setAge(e.target.value)}
+                            error={ageError}
+                        >
+                            <MenuItem value={'below 10'}>below 10</MenuItem>
+                            <MenuItem value={'10 - 20'}>10 - 20</MenuItem>
+                            <MenuItem value={'21 - 40'}>21 - 40</MenuItem>
+                            <MenuItem value={'41 - 60'}>41 - 60</MenuItem>
+                            <MenuItem value={'over 60'}>over 60</MenuItem>
+                        </Select>
+                    </FormControl>
+                </Box>
                 <TextField sx={field}
                     onChange={(e) => setPhone(e.target.value)}
                     label="Phone"
@@ -156,7 +168,7 @@ const VolunteerForm = () => {
                     options={categories}
                     sx={field}
                     onChange={(e, val) => setCity(val)}
-                    renderInput={(params) => <TextField {...params} label="City" onChange={(e) => setCity(e.target.value)} />}
+                    renderInput={(params) => <TextField {...params} label="City" required onChange={(e) => setCity(e.target.value)} />}
                 />
                 <TextField sx={field}
                     onChange={(e) => setPincode(e.target.value)}
