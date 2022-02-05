@@ -10,6 +10,7 @@ import PublicTwoToneIcon from '@mui/icons-material/PublicTwoTone';
 import ParkOutlinedIcon from '@mui/icons-material/ParkOutlined';
 import TimelapseOutlinedIcon from '@mui/icons-material/TimelapseOutlined';
 import LandscapeOutlinedIcon from '@mui/icons-material/LandscapeOutlined';
+import TimelineOutlinedIcon from '@mui/icons-material/TimelineOutlined';
 import AirOutlinedIcon from '@mui/icons-material/AirOutlined';
 import AdminPanelSettingsIcon from '@mui/icons-material/AdminPanelSettings';
 import VolunteerActivismIcon from '@mui/icons-material/VolunteerActivism';
@@ -31,14 +32,15 @@ export default function Navbar() {
                             <PublicTwoToneIcon color="success" fontSize="large" />
                         </IconButton>
                         <Typography variant="h6" color="inherit" component="div">
-                            Green Cover Analysis
+                            Green Cover
                         </Typography>
                     </Link>
-                    <Button color="inherit" sx={{ ml: 18 }} startIcon={<ParkOutlinedIcon sx={{ mr: 0, pr: 0 }} />} href="/vegetation">Vegetation</Button>
+                    <Button color="inherit" sx={{ ml: 13 }} startIcon={<ParkOutlinedIcon sx={{ mr: 0, pr: 0 }} />} href="/vegetation">Vegetation</Button>
                     <Button color="inherit" sx={{ ml: 5 }} startIcon={<TimelapseOutlinedIcon sx={{ mr: 0, pr: 0 }} />} href="/timelapse">NDVI Timelapse</Button>
                     <Button color="inherit" sx={{ ml: 5 }} startIcon={<LandscapeOutlinedIcon sx={{ mr: 0, pr: 0 }} />} href="/landcover">Land Cover</Button>
                     <Button color="inherit" sx={{ ml: 5 }} startIcon={<AirOutlinedIcon sx={{ mr: 0, pr: 0 }} />} href="/airQuality">Air Quality</Button>
-                    <Button color="inherit" sx={{ ml: 5 }} startIcon={<VolunteerActivismIcon sx={{ mr: 0, pr: 0 }} />} href="/volunteer">Volunteer</Button>
+                    <Button color="inherit" sx={{ ml: 5 }} startIcon={<VolunteerActivismIcon sx={{ mr: 0, pr: 0 }} />} href="/volunteer">Green Guardian</Button>
+                    <Button color="inherit" sx={{ ml: 5 }} startIcon={<TimelineOutlinedIcon sx={{ mr: 0, pr: 0 }} />} href="/facts">Fact Sheet</Button>
                     <Button color="inherit" sx={{ ml: 5 }} startIcon={<AdminPanelSettingsIcon sx={{ mr: 0, pr: 0 }} />} href="/admin">Admin</Button>
                 </Toolbar>
             </AppBar>

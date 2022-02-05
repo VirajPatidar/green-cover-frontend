@@ -9,6 +9,7 @@ import LandCover from './components/landCover';
 import AirQuality from './components/airQuality';
 import Volunteer from './components/volunteer';
 import Admin from './components/admin';
+import Facts from './components/facts';
 
 function App() {
     return (
@@ -24,6 +25,7 @@ function App() {
 
                 <Route path="/volunteer" element={<Volunteer />} exact />
                 <Route path="/admin" element={<Admin />} exact />
+                <Route path="/facts" element={<Facts />} exact />
 
                 <Route path="*" element={<NotFound />} />
             </Routes>
