@@ -28,7 +28,7 @@ const Statistics = () => {
                     <Card raised sx={{ height: '100%', display: 'flex', flexDirection: 'column', backgroundColor: '#ffe082' }}>
                         <CardContent sx={{ flexGrow: 1, textAlign: "center", pb: 0, mb: 0 }}>
                             <Typography gutterBottom variant="h5" component="h2">
-                                Active Volunteers
+                                Active Guardians
                             </Typography>
                             <Typography variant="h2">
                                 {data && data.volunteers}

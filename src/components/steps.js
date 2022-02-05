@@ -5,7 +5,7 @@ import Step from '@mui/material/Step';
 import StepLabel from '@mui/material/StepLabel';
 import Typography from '@mui/material/Typography';
 
-const steps = ['Register as a volunteer', 'Get notified regarding green events in your area', 'Actively participate in green events'];
+const steps = ['Register as a green guardian', 'Get notified regarding green events in your area', 'Actively participate in green events'];
 
 export default function Steps() {
 

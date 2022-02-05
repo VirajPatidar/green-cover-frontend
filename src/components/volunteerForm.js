@@ -105,10 +105,10 @@ const VolunteerForm = () => {
     return (
         <ThemeProvider theme={theme}>
             <Typography variant="h5" gutterBottom component="div">
-                Register as a Volunteer (Maharashtra)
+                Register as a Green Guardian (Maharashtra)
             </Typography>
             <Typography variant="body1" component="div" sx={{ mb: 0 }}>
-                Register as a volunteer and contribute in our green drives to reduce green cover depletion and spread awareness. <br />
+                Register as a green guardian and contribute in our green drives to reduce green cover depletion and spread awareness. <br />
                 At present we are only accepting applications for the state of Maharashtra, but we plan to expand soon.
             </Typography>
             <form noValidate autoComplete="off" onSubmit={handleSubmit}>
