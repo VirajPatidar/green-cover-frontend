@@ -6,6 +6,10 @@ import MapFrame from './mapFrame';
 import { Typography, Box, Link, IconButton } from '@mui/material';
 import InfoOutlinedIcon from '@mui/icons-material/InfoOutlined';
 import InfoDialog from './infoDialog';
+import MHLCClassTable from './LC_Tables/mh_lc_class_table';
+import MHLCClassChangeTable from './LC_Tables/mh_lc_class_change_table';
+import MHLCClassPercChangeTable from './LC_Tables/mh_lc_class_percChange_table';
+import MHLCClassDistrictTable from './LC_Tables/ml_lc_district_class_table';
 
 const LandCover = () => {
 
@@ -33,7 +37,7 @@ const LandCover = () => {
         <>
             {data
                 ?
-                <Box sx={{mb:5}}>
+                <Box sx={{ mb: 5 }}>
                     <Box sx={{ ml: 7, my: 4 }}>
                         <Typography variant="h5">
                             {data.name}
@@ -49,7 +53,7 @@ const LandCover = () => {
                             </ul>
                         </Typography>
                         <Typography variant="body2" gutterBottom sx={{ mt: 2, maxWidth: "80%" }}>
-                            <strong sx={{pb:1}}>Approach:</strong> <br />
+                            <strong sx={{ pb: 1 }}>Approach:</strong> <br />
                             Aim is to predict landcover of Maharashtra for desired year using landcover data accessible via MODIS dataset. Since MODIS dataset is only available from 2001-01-01 to 2019-01-01, we can used supervised classification technique to predict landcover of Maharashtra after 2019-01-01.<br />
                         </Typography>
                         <Typography variant="body2">
@@ -68,6 +72,32 @@ const LandCover = () => {
                         </Typography>
                     </Box>
                     <MapFrame url={data.map_url} height={"660"} />
+                    <Box mt={10}>
+                        <Typography variant="h5" gutterBottom  sx={{ ml: 7 }}>
+                            Land cover classification of Maharashtra over the years (2001 to 2020)
+                        </Typography>
+                        <Box ml="auto" mr="auto" sx={{ maxWidth: 1410 }}>
+                            <MHLCClassTable />
+                        </Box>
+                        <Typography variant="h5" gutterBottom  sx={{ ml: 7, mt: 10 }}>
+                            Change in land cover classification of Maharashtra over the years (2002 to 2020)
+                        </Typography>
+                        <Box ml="auto" mr="auto" sx={{ maxWidth: 1410 }}>
+                            <MHLCClassChangeTable />
+                        </Box>
+                        <Typography variant="h5" gutterBottom  sx={{ ml: 7, mt: 10 }}>
+                            Percentage change in land cover classification of Maharashtra over the years (2002 to 2020)
+                        </Typography>
+                        <Box ml="auto" mr="auto" sx={{ maxWidth: 1410 }}>
+                            <MHLCClassPercChangeTable />
+                        </Box>
+                        <Typography variant="h5" gutterBottom  sx={{ ml: 7, mt: 10 }}>
+                            District wise land cover classification of Maharashtra over the years (2001 to 2018)
+                        </Typography>
+                        <Box ml="auto" mr="auto" sx={{ maxWidth: 1410 }}>
+                            <MHLCClassDistrictTable />
+                        </Box>
+                    </Box>
                     <InfoDialog
                         open={open}
                         closeDialog={close}
