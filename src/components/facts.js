@@ -1,5 +1,5 @@
 // MUI
-import { Box, Card, Chip, Divider, Grid, Typography } from "@mui/material";
+import { Box, Card, Chip, Divider, Grid, Link, Typography } from "@mui/material";
 import { teal } from '@mui/material/colors';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 
@@ -20,13 +20,25 @@ const Facts = () => {
                     <Typography gutterBottom variant="h4" sx={{ textAlign: "center" }}>
                         Fact Sheet
                     </Typography>
+                    <Box mt={2} mb={3} sx={{ textAlign: "center" }}>
+                        <em>
+                            <b>Data Source: {" "}</b>
+                            <Link href="https://www.globalforestwatch.org/" underline="hover" target="_blank" rel="noopener" >
+                                {'Global Forest Watch'}
+                            </Link>
+                            {", "}
+                            <Link href="https://fsi.nic.in/index.php" underline="hover" target="_blank" rel="noopener" >
+                                {'Forest Survey India'}
+                            </Link>
+                        </em>
+                    </Box>
                     <Box mt={3} mb={3} pb={3} sx={{ textAlign: "center" }}>
                         <Chip
                             label="GLOBAL"
                             component="a"
                             href="#global"
                             variant="outlined"
-                            color="primary" 
+                            color="primary"
                             clickable
                         />
                         &nbsp;&nbsp;&nbsp;
@@ -35,7 +47,7 @@ const Facts = () => {
                             component="a"
                             href="#ind"
                             variant="outlined"
-                            color="primary" 
+                            color="primary"
                             clickable
                         />
                         &nbsp;&nbsp;&nbsp;
@@ -44,7 +56,7 @@ const Facts = () => {
                             component="a"
                             href="#mha"
                             variant="outlined"
-                            color="primary" 
+                            color="primary"
                             clickable
                         />
                     </Box>
