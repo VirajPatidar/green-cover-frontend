@@ -37,7 +37,6 @@ const columns = [
 ];
 
 const rows = dbd_yby_mh_lc_class.map((item, id) => Object.assign(item, { id }));
-console.log(rows);
 // const rows = dbd_yby_mh_lc_class;
 
 export default function MHLCClassDistrictTable() {

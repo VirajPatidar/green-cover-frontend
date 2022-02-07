@@ -61,7 +61,6 @@ export default function Admin() {
 
         e.preventDefault();
 
-        console.log(formData);
 
         // Validation
         let submit = true
@@ -72,8 +71,6 @@ export default function Admin() {
         if (formData.username === "" || formData.username.length < 3) {
             setUsernameError(true)
             submit = false
-            console.log(submit)
-            console.log(formData.username)
         }
         if (formData.password === "" || formData.password.length < 5) {
             setPasserror(true)
@@ -87,13 +84,10 @@ export default function Admin() {
                 "password": formData.password,
             })
                 .then((res) => {
-                    console.log(res);
                     setData(res.data)
-                    console.log(res.data);
                     setLogin(true);
                 })
                 .catch(err => {
-                    console.log(err)
                     if (err.response.status === 401) {
                         setTransition(() => TransitionLeft);
                         setOpen(true);

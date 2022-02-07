@@ -91,13 +91,10 @@ const VolunteerForm = () => {
                 "pincode": pincode
             })
                 .then((res) => {
-                    console.log(res);
-                    console.log(res.data);
                     alert("You have been registered as a volunteer. We will contact you soon.")
                     navigate('/');
                 })
                 .catch(err => {
-                    console.log(err)
                 });
         }
     }

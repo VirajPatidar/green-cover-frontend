@@ -36,12 +36,10 @@ function createData(data) {
         var lc_area = []
         // eslint-disable-next-line
         for (const [classifi, c_value] of Object.entries(data[year])) {
-            console.log(data[year][classifi].area);
             lc_area.push(data[year][classifi].area);
         }
         rows.push({...lc_area});
     }
-    console.log(rows);
 }
 
 createData(mh_lc_class)

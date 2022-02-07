@@ -77,8 +77,6 @@ const EventForm = () => {
                 "notify": checked,
             })
                 .then((res) => {
-                    console.log(res);
-                    console.log(res.data);
                     alert("Event created successfully");
                     setName('');
                     setCity('Mumbai');
@@ -88,7 +86,6 @@ const EventForm = () => {
                     setChecked(false);
                 })
                 .catch(err => {
-                    console.log(err)
                 });
         }
     }

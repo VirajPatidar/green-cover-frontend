@@ -43,7 +43,6 @@ function createData(data) {
             rows.push({ ...lc_area_change });
         }
     }
-    console.log(rows);
 }
 
 createData(mh_lc_class)

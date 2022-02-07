@@ -20,13 +20,10 @@ const Vegetation = () => {
     useEffect(() => {
         axios.get(`https://green-cover-backend.herokuapp.com/vegetation`)
             .then((res) => {
-                console.log(res);
-                console.log(res.data.response_data);
                 setData(res.data.response_data);
 
             })
             .catch(err => {
-                console.log(err)
             });
     }, [])
 

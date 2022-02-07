@@ -11,13 +11,10 @@ const Statistics = () => {
     useEffect(() => {
         axios.get(`https://green-cover-backend.herokuapp.com/statistics`)
             .then((res) => {
-                console.log(res);
-                console.log(res.data);
                 setData(res.data);
 
             })
             .catch(err => {
-                console.log(err)
             });
     }, [])
 

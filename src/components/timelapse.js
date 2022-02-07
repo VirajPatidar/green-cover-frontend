@@ -19,13 +19,10 @@ const Timelapse = () => {
     useEffect(() => {
         axios.get(`https://green-cover-backend.herokuapp.com/ndvitimelapse`)
             .then((res) => {
-                console.log(res);
-                console.log(res.data.response_data);
                 setData(res.data.response_data);
 
             })
             .catch(err => {
-                console.log(err)
             });
     }, [])
 

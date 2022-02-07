@@ -44,12 +44,9 @@ export default function Graph() {
                 "end_date": format(value1, "yyyy-MM-dd"),
             })
                 .then((res) => {
-                    console.log(res);
                     setGraphs(res.data);
                 })
                 .catch(err => {
-                    console.log(err)
-                    console.log({ err })
                     if (err.response.status === 400) {
                         alert("an error occured. Please try again")
                     }

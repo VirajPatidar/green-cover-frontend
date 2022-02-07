@@ -22,12 +22,9 @@ const UpcomingEvents = () => {
     useEffect(() => {
         axios.get(`https://green-cover-backend.herokuapp.com/get-event`)
             .then((res) => {
-                console.log(res);
-                console.log(res.data);
                 setData(res.data);
             })
             .catch(err => {
-                console.log(err)
             });
     }, [])
 
