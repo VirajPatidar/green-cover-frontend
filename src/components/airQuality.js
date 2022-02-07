@@ -135,7 +135,7 @@ const AirQuality = () => {
     const close = () => setOpen(false);
 
     useEffect(() => {
-        axios.get(`http://localhost:8000/airqualityindex`)
+        axios.get(`https://green-cover-backend.herokuapp.com/airqualityindex`)
             .then((res) => {
                 console.log(res);
                 console.log(res.data.response_data);

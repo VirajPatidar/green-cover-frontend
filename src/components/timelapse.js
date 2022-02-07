@@ -17,7 +17,7 @@ const Timelapse = () => {
     const close = () => setOpen(false);
 
     useEffect(() => {
-        axios.get(`http://localhost:8000/ndvitimelapse`)
+        axios.get(`https://green-cover-backend.herokuapp.com/ndvitimelapse`)
             .then((res) => {
                 console.log(res);
                 console.log(res.data.response_data);
