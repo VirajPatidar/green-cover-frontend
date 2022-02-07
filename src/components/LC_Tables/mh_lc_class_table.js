@@ -63,9 +63,9 @@ export default function MHLCClassTable() {
                         <StyledTableCell align="left">Grasslands</StyledTableCell>
                         <StyledTableCell align="left">Permanent wetlands</StyledTableCell>
                         <StyledTableCell align="left">Croplands</StyledTableCell>
+                        <StyledTableCell align="left">Urban and built-up</StyledTableCell>
                         <StyledTableCell align="left">Cropland/natural vegetation mosaic</StyledTableCell>
                         <StyledTableCell align="left">Barren or sparsely vegetated</StyledTableCell>
-                        <StyledTableCell align="left">Unclassified</StyledTableCell>
                     </TableRow>
                 </TableHead>
                 <TableBody>
