@@ -3,7 +3,7 @@ import axios from 'axios';
 import MapFrame from './mapFrame';
 
 //MUI
-import { Typography, Box, Link, IconButton } from '@mui/material';
+import { Typography, Box, Link, IconButton, Card, Grid, Chip, Divider } from '@mui/material';
 import InfoOutlinedIcon from '@mui/icons-material/InfoOutlined';
 import InfoDialog from './infoDialog';
 import Accordion from '@mui/material/Accordion';
@@ -180,6 +180,53 @@ const AirQuality = () => {
                         <AirQualityAccordion />
                     </Box>
                     <MapFrame url={data.map_url} height={"660"} />
+                    <Box mt={8} mx={4}>
+                        <Box p={3}>
+                            <Box mb={2}>
+                                <Typography gutterBottom variant="h5" sx={{ textAlign: "center" }}>
+                                    Air Quality Statistics
+                                </Typography>
+                            </Box>
+                            <Divider />
+                            <Box mt={2}>
+                                <Typography gutterBottom variant="h6">
+                                    <span style={{ marginLeft: "300px" }}>INDIA</span><span style={{ marginLeft: "620px" }}>MAHARASHTRA</span>
+                                </Typography>
+                            </Box>
+                            <Grid container spacing={2}>
+                                <Grid item xs={6}>
+                                    <Card elevation={3}>
+                                        <iframe width="740" height="460" frameborder="0" title="3" src="https://www.globalforestwatch.org/embed/widget/emissionsDeforestation/country/IND"></iframe>
+                                    </Card>
+                                </Grid>
+                                <Grid item xs={6}>
+                                    <Card elevation={3}>
+                                        <iframe width="740" height="460" frameborder="0" title="4" src="https://www.globalforestwatch.org/embed/widget/emissionsDeforestation/country/IND/20"></iframe>
+                                    </Card>
+                                </Grid>
+                                <Grid item xs={6}>
+                                    <Card elevation={3}>
+                                        <iframe width="740" height="460" frameborder="0" title="5" src="https://www.globalforestwatch.org/embed/widget/emissionsDeforestationDrivers/country/IND"></iframe>
+                                    </Card>
+                                </Grid>
+                                <Grid item xs={6}>
+                                    <Card elevation={3}>
+                                        <iframe width="740" height="460" frameborder="0" title="6" src="https://www.globalforestwatch.org/embed/widget/emissionsDeforestationDrivers/country/IND/20?emissionsDeforestationDrivers=eyJoaWdobGlnaHRlZCI6ZmFsc2V9"></iframe>
+                                    </Card>
+                                </Grid>
+                                <Grid item xs={6}>
+                                    <Card elevation={3}>
+                                        <iframe width="740" height="660" frameborder="0" title="1" src="https://www.globalforestwatch.org/embed/widget/carbonFlux/country/IND"></iframe>
+                                    </Card>
+                                </Grid>
+                                <Grid item xs={6}>
+                                    <Card elevation={3}>
+                                        <iframe width="740" height="660" frameborder="0" title="2" src="https://www.globalforestwatch.org/embed/widget/carbonFlux/country/IND/20"></iframe>
+                                    </Card>
+                                </Grid>
+                            </Grid>
+                        </Box>
+                    </Box>
                     <InfoDialog
                         open={open}
                         closeDialog={close}
