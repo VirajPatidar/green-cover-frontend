@@ -31,8 +31,10 @@ const StyledTableRow = styled(TableRow)(({ theme }) => ({
 
 var rows = []
 function createData(data) {
+    // eslint-disable-next-line
     for (const [year, y_data] of Object.entries(data)) {
         var lc_area = []
+        // eslint-disable-next-line
         for (const [classifi, c_value] of Object.entries(data[year])) {
             console.log(data[year][classifi].area);
             lc_area.push(data[year][classifi].area);

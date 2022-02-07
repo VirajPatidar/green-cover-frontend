@@ -108,7 +108,7 @@ const LandCover = () => {
                         </Typography>
                         <Typography variant="body2" gutterBottom sx={{ ml: 7, mt: 1, mb: 1, maxWidth: "80%" }}>
                             <strong sx={{ pb: 1 }}>Dataset Used: </strong> <Link href="https://developers.google.com/earth-engine/datasets/catalog/MODIS_006_MCD12Q1" target="_blank" rel="noopener">MCD12Q1.006 MODIS Land Cover Type Yearly Global 500m</Link><br />
-                            The table below denotes percentage change in land classification of Maharashtra from 2002 to 2020. The percentage spread/area change of each class can be seen against the desired year. <br />  <strong>Formula: </strong> Change in area of class / Area of Maharashtra (307,713 km²) &times; 100<br />
+                            The table below denotes percentage change in land classification of Maharashtra from 2002 to 2020. The percentage spread/area change of each class can be seen against the desired year. <br />  <strong>Formula: </strong> Change in area of class / Area of Maharashtra (307,713 km²) &times; 100<br /> Negative value denotes loss in cover and positive value denotes gain in cover. <br />
                         </Typography>
                         <Box ml="auto" mr="auto" sx={{ maxWidth: 1410 }}>
                             <MHLCClassPercChangeTable />

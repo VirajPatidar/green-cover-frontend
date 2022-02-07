@@ -31,9 +31,11 @@ const StyledTableRow = styled(TableRow)(({ theme }) => ({
 
 var rows = []
 function createData(data) {
+    // eslint-disable-next-line
     for (const [year, y_data] of Object.entries(data)) {
-        if (year != 2001) {
+        if (year !== 2001) {
             var lc_perc_area_change = []
+            // eslint-disable-next-line
             for (const [classifi, c_value] of Object.entries(data[year])) {
                 var val = data[year][classifi].percent_change
                 lc_perc_area_change.push(val * -1);
