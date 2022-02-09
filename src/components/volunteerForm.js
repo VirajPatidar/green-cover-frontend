@@ -145,8 +145,10 @@ const VolunteerForm = () => {
                         >
                             <MenuItem value={'below 10'}>below 10</MenuItem>
                             <MenuItem value={'10 - 20'}>10 - 20</MenuItem>
-                            <MenuItem value={'21 - 40'}>21 - 40</MenuItem>
-                            <MenuItem value={'41 - 60'}>41 - 60</MenuItem>
+                            <MenuItem value={'21 - 30'}>21 - 30</MenuItem>
+                            <MenuItem value={'31 - 40'}>31 - 40</MenuItem>
+                            <MenuItem value={'41 - 50'}>41 - 50</MenuItem>
+                            <MenuItem value={'51 - 60'}>51 - 60</MenuItem>
                             <MenuItem value={'over 60'}>over 60</MenuItem>
                         </Select>
                     </FormControl>
