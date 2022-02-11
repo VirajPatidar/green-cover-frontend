@@ -117,11 +117,11 @@ const Facts = () => {
                                     Country along with gain:
                                 </Typography>
                                 <Box ml={2} mr={4}>
-                                    <p style={{ marginTop: "10px", display: "flex", justifyContent: "space-between" }}>1. Delhi <Chip color="primary" label="19.4 kha, +11%" /></p>
-                                    <p style={{ marginTop: "10px", display: "flex", justifyContent: "space-between" }}>2. Mumbai <Chip color="primary" label="11.1 kha, +9%" /></p>
-                                    <p style={{ marginTop: "10px", display: "flex", justifyContent: "space-between" }}>3. Bengaluru <Chip color="primary" label="8.9 kha, -5%" /></p>
-                                    <p style={{ marginTop: "10px", display: "flex", justifyContent: "space-between" }}>4. Hyderabad <Chip color="primary" label="8.2 kha, +15%" /></p>
-                                    <p style={{ marginTop: "10px", display: "flex", justifyContent: "space-between" }}>5. Chennai <Chip color="primary" label="2.3 kha, +26%" /></p>
+                                    <p style={{ marginTop: "10px", display: "flex", justifyContent: "space-between" }}>1. Brazil <Chip color="primary" label="26.2 Mha" /></p>
+                                    <p style={{ marginTop: "10px", display: "flex", justifyContent: "space-between" }}>2. Indonesia <Chip color="primary" label="9.7 Mha" /></p>
+                                    <p style={{ marginTop: "10px", display: "flex", justifyContent: "space-between" }}>3. Republic of the Congo <Chip color="primary" label="5.3 Mha" /></p>
+                                    <p style={{ marginTop: "10px", display: "flex", justifyContent: "space-between" }}>4. Bolivia <Chip color="primary" label="3.0 Mha" /></p>
+                                    <p style={{ marginTop: "10px", display: "flex", justifyContent: "space-between" }}>5. Malaysia <Chip color="primary" label="2.7 Mha" /></p>
                                 </Box>
                             </Box>
                         </Card>
