@@ -47,7 +47,7 @@ const Home = () => {
                                     Become a Green Guardian
                                 </Typography>
                                 <Typography sx={{ mb: 1.5 }} color="text.secondary">
-                                    for <br /> students, volunteers, NGO's
+                                    for <br /> students, industries, volunteers, NGO's
                                 </Typography>
                                 <Typography variant="body2" sx={{ textAlign: "left" }}>
                                     Register as a green guardian today and participate in our green events to make a difference and help reduce green cover depletion.
