@@ -11,6 +11,12 @@ import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
+//IMAGE
+import AAI from '../images/AAI.png';
+import CO from '../images/CO.png';
+import NO from '../images/NO.png';
+import HCHO from '../images/HCHO.png';
+
 function AirQualityAccordion() {
     return (
         <Box sx={{ mt: 3, ml: 1, mr: 8, p: 2, backgroundColor: "#c8e6c9", borderRadius: "25px" }}>
@@ -27,6 +33,7 @@ function AirQualityAccordion() {
                 </AccordionSummary>
                 <AccordionDetails>
                     <Typography>
+                        <strong>Legend: </strong> <br /> <img src={AAI} alt="AAI" width="500"/> <br /> <br />
                         The AAI is based on wavelength-dependent changes in Rayleigh scattering in the UV
                         spectral range for a pair of wavelengths. The difference between observed and
                         modelled reflectance results in the AAI. When the AAI is positive, it indicates
@@ -66,6 +73,7 @@ function AirQualityAccordion() {
                 </AccordionSummary>
                 <AccordionDetails>
                     <Typography>
+                    <strong>Legend: </strong> <br /> <img src={CO} alt="CO" width="500"/> <br /> <br />
                         Carbon monoxide (CO) is an important atmospheric trace gas for understanding tropospheric chemistry. In certain urban areas, it is a major atmospheric pollutant. Main sources of CO are combustion of fossil fuels, biomass burning, and atmospheric oxidation of methane and other hydrocarbons. Whereas fossil fuel combustion is the main source of CO at northern mid-latitudes, the oxidation of isoprene and biomass burning play an important role in the tropics. TROPOMI on the Sentinel 5 Precursor (S5P) satellite observes the CO global abundance exploiting clear-sky and cloudy-sky Earth radiance measurements in the 2.3 µm spectral range of the shortwave infrared (SWIR) part of the solar spectrum. TROPOMI clear sky observations provide CO total columns with sensitivity to the tropospheric boundary layer. For cloudy atmospheres, the column sensitivity changes according to the light path. <br /><br />
                         Carbon monoxide (CO) is an important atmospheric trace gas for our
                         understanding of tropospheric chemistry. In certain urban areas, it is a
@@ -88,6 +96,7 @@ function AirQualityAccordion() {
                 </AccordionSummary>
                 <AccordionDetails>
                     <Typography>
+                        <strong>Legend: </strong> <br /> <img src={NO} alt="NO" width="500"/> <br /> <br />
                         Nitrogen oxides (NO2 and NO) are important trace gases in the Earth's atmosphere, present in both the troposphere and the stratosphere. They enter the atmosphere as a result of anthropogenic activities (notably fossil fuel combustion and biomass burning) and natural processes (wildfires, lightning, and microbiological processes in soils). Here, NO2 is used to represent concentrations of collective nitrogen oxides because during daytime, i.e. in the presence of sunlight, a photochemical cycle involving ozone (O3) converts NO into NO2 and vice versa on a timescale of minutes. The TROPOMI NO2 processing system is based on the algorithm developments for the DOMINO-2 product and for the EU QA4ECV NO2 reprocessed dataset for OMI, and has been adapted for TROPOMI. This retrieval-assimilation-modelling system uses the 3-dimensional global TM5-MP chemistry transport model at a resolution of 1x1 degree as an essential element. <br /><br />
                         High levels of NOx can have a negative effect on vegetation, including
                         leaf damage and reduced growth. It can make vegetation more
@@ -113,6 +122,7 @@ function AirQualityAccordion() {
                 </AccordionSummary>
                 <AccordionDetails>
                     <Typography>
+                        <strong>Legend: </strong> <br /> <img src={HCHO} alt="HCHO" height="200" width="160"/> <br /> <br />
                         Formaldehyde is an intermediate gas in almost all oxidation chains of non-methane volatile organic compounds (NMVOC), leading eventually to CO2. Non-Methane Volatile Organic Compounds (NMVOCs) are, together with NOx, CO and CH4, among the most important precursors of tropospheric O3. The major HCHO source in the remote atmosphere is CH4 oxidation. Over the continents, the oxidation of higher NMVOCs emitted from vegetation, fires, traffic and industrial sources results in important and localized enhancements of the HCHO levels. The seasonal and inter-annual variations of the formaldehyde distribution are principally related to temperature changes and fire events, but also to changes in anthropogenic activities. HCHO concentrations in the boundary layer can be directly related to the release of short-lived hydrocarbons, which mostly cannot be observed directly from space. <br /><br />
                         Formaldehyde can cause irritation of the skin, eyes, nose, and throat.
                         High levels of exposure may cause some types of cancers. Learn more
@@ -174,7 +184,7 @@ const AirQuality = () => {
                                 <li>Absorbing Aerosol Index (AAI)</li>
                                 <li>Carbon monoxide (CO)</li>
                                 <li>Nitrogen oxides (NO2 and NO)</li>
-                                <li>AtmosphericFormaldehyde (HCHO)</li>
+                                <li>Atmospheric Formaldehyde (HCHO)</li>
                             </ol>
                         </Typography>
                         <AirQualityAccordion />

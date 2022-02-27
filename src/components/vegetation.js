@@ -70,7 +70,7 @@ const Vegetation = () => {
                             <Link href="https://developers.google.com/earth-engine/datasets/catalog/MODIS_006_MOD13Q1" target="_blank" rel="noopener">MOD13Q1.006 Terra Vegetation Indices 16-Day Global 250m</Link>
                         </Typography>
                         <Typography variant="body2" gutterBottom sx={{ mt: 2, maxWidth: "80%" }}>
-                            NDVI is the most commonly used remote sensing index that calculates the ratio of the difference and sum between the Near Infrared and Red bands of multispectral images. It normally takes values between -1 and +1. It is mostly used in vegetation dynamics monitoring, including biomass quantification. <br />
+                            NDVI is the most commonly used remote sensing index that calculates the ratio of the difference and sum between the Near Infrared and Red bands of multispectral images. It is mostly used in vegetation dynamics monitoring, including biomass quantification. <br />
                         </Typography>
                         <Typography variant="body1" gutterBottom sx={{ mt:3, mb:2, maxWidth: "80%" }}>
                             <strong>Enter start and end dates to get the EVI and NDVI graph for that duration:</strong> <br />
